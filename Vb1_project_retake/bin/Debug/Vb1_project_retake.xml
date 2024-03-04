@@ -1,0 +1,165 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Vb1_project_retake
+</name>
+</assembly>
+<members>
+<member name="T:Vb1_project_retake.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Vb1_project_retake.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Vb1_project_retake.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Vb1_project_retake.DBManager.#ctor">
+ <summary>
+ Constructor, opens connection
+ </summary>
+</member>
+<member name="M:Vb1_project_retake.DBManager.ListUser">
+ <summary>
+ List all the user within the database
+ </summary>
+</member>
+<member name="M:Vb1_project_retake.DBManager.LogIn(System.String,System.String)">
+ <summary>
+ Verify the database with the input username and password 
+ </summary>
+ <param name="username"></param>
+ <param name="password"></param>
+ <returns></returns>
+</member>
+<member name="M:Vb1_project_retake.DBManager.AddUser(Vb1_project_retake.UserClass)">
+ <summary>
+ Query to insert a new user to the database
+ </summary>
+ <param name="user"></param>
+ <returns></returns>
+</member>
+<member name="M:Vb1_project_retake.DBManager.CheckUsername(System.String)">
+ <summary>
+ If the inputed username exist then valid is true
+ </summary>
+ <param name="username"></param>
+ <returns></returns>
+</member>
+<member name="M:Vb1_project_retake.DBManager.UpdateUser(Vb1_project_retake.UserClass,System.Int32)">
+ <summary>
+ Query to update the variable of a user in from the database
+ </summary>
+ <param name="user"></param>
+</member>
+<member name="M:Vb1_project_retake.DBManager.DeleteUser(System.String)">
+ <summary>
+ Query to delete a user from the database
+ </summary>
+ <param name="id"></param>
+</member>
+<member name="M:Vb1_project_retake.DBManager.ListMovie">
+ <summary>
+ List all the movies
+ </summary>
+</member>
+<member name="M:Vb1_project_retake.DBManager.AddMovie(Vb1_project_retake.MovieClass)">
+ <summary>
+ Query to add movie
+ </summary>
+ <param name="movie"></param>
+ <returns></returns>
+</member>
+<member name="M:Vb1_project_retake.DBManager.CheckTitle(System.String)">
+ <summary>
+ Query to check movie with the title
+ </summary>
+ <param name="title"></param>
+ <returns></returns>
+</member>
+<member name="M:Vb1_project_retake.DBManager.DeleteMovie(System.String)">
+ <summary>
+ Query to delete movie of the id
+ </summary>
+ <param name="id"></param>
+</member>
+<member name="M:Vb1_project_retake.FormScreenMain.Users_Lists_Load(System.Object,System.EventArgs)">
+ <summary>
+ Handles the display of the user list from the database
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Vb1_project_retake.FormScreenMain.LogOutToolStripMenuItem_Click_1(System.Object,System.EventArgs)">
+ <summary>
+ Logs the user out
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Vb1_project_retake.FormScreenMain.ExitToolStripMenuItem_Click(System.Object,System.EventArgs)">
+ <summary>
+ Exit the application
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Vb1_project_retake.FormScreenMain.UserToolStripMenuItem_Click(System.Object,System.EventArgs)">
+ <summary>
+ Navigate to the create a new user menu
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Vb1_project_retake.FormScreenMain.users_lists_CellClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+ <summary>
+ Return the index of the selected row
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Vb1_project_retake.FormScreenMain.btn_edit_user_Click(System.Object,System.EventArgs)">
+ <summary>
+ Navigate to the edit user menu when a row is selected
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Vb1_project_retake.FormUserInput.GoBackToolStripMenuItem_Click(System.Object,System.EventArgs)">
+ <summary>
+ Return to the main screen
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Vb1_project_retake.FormUserInput.btn_save_Click(System.Object,System.EventArgs)">
+ <summary>
+ When all condition are true, data is saved
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Vb1_project_retake.FormUserInput.btn_update_Click(System.Object,System.EventArgs)">
+ <summary>
+ Action to update a user information
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Vb1_project_retake.FormUserInput.DeleteToolStripMenuItem_Click(System.Object,System.EventArgs)">
+ <summary>
+ Confirm and delete the user
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+</members>
+</doc>
